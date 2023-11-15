@@ -96,3 +96,18 @@ function kt6(day, month) {
         console.log("hop le");
     }
 }
+
+function b10(tiengui, laisuat, thang) {
+    return (tiengui / 100) * laisuat * thang + tiengui;
+}
+function b11(hour) {
+    return hour >= 0 && hour <= 23;
+}
+console.log(b11(22));
+
+function b13(arr, word) {
+    return arr.includes(word.toUpperCase());
+}
+console.log(b13(["ASAP",'LOL'], "lol"));
+
+
