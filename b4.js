@@ -91,3 +91,9 @@ for (let i = 0; i < b10.length; i++) {
     sum += b10[i].price * b10[i].count;
 }
 console.log(sum);
+
+function kt(arr) {
+    let a = arr.filter((element) => element < 0);
+    return a;
+}
+console.log(kt([-1, 2, -3, 2, -4]));
