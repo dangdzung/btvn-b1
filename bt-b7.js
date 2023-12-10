@@ -30,11 +30,11 @@ console.log(newarr(["a", "b", "c", "d"], 3));
 
 const dele = (arr) => {
     let newArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (!newArr.includes(arr[i])) {
-            newArr.push(arr[i]);
+    arr.forEach((element) => {
+        if (!newArr.includes(element)) {
+            newArr.push(element);
         }
-    }
+    });
     return newArr;
 };
 console.log(dele([1, 2, 3, 2, 4]));
@@ -65,7 +65,7 @@ console.log(arr4("     phan    dang    dung    "));
 
 //1.8
 const sx = (a) => {
-    for (let i = 0; i < a.length-1; i++) {
+    for (let i = 0; i < a.length - 1; i++) {
         for (let j = i + 1; j < a.length; j++) {
             if (a[i].order > a[j].order) {
                 let t = a[i].order;
@@ -79,8 +79,19 @@ const sx = (a) => {
 console.log(
     sx([
         { id: 10, order: 0 },
-        { id: 12, order: 2},
+        { id: 12, order: 2 },
         { id: 9, order: 1 },
         { id: 11, order: 3 },
     ])
 );
+
+//1.5
+const xs=(ob,key)=>{
+    ob.forEach(element=>{
+        
+    })
+}
+
+
+
+//1.7
